@@ -1,0 +1,61 @@
+<html>
+    <center>
+    <head>KAKULATOR</head>
+    </center>    
+    <title>Kalkulator</title>
+    <body>
+    <style type="text/css">
+        body{
+            font-style: arial; 
+            background-color: blue;
+            color: lightgreen;
+            font-size: 20;
+        }
+    </style>
+    <script language="JavaScript" type="text/javascript">
+
+    <!--
+    function hitung()
+    {
+
+    var form2 = document.form3; 
+    var x=eval(form2.x.value);
+    var y=eval(form2.y.value);
+    var pil= form2.opt.value;
+    if (pil == "Penambahan") {
+    var z = x + y;
+     }else if (pil == "Pengurangan") {
+    var z = x - y;
+     } else if (pil == "Perkalian") {
+    var z = x * y;
+     } else if (pil == "Pembagian") {
+    var z = x / y;
+     }
+     form2.hasil.value = z;
+     form2.x.value = "";
+     form2.y.value = "";
+    }
+    function resetForm()
+    {
+    document.form3.reset();
+    }
+
+    //-->
+
+    </script>
+    <div align="center"> 
+    <form name="form3" action="#">
+    <p>Bilangan 1 : <input type="text" name="x" /></p><br>
+    <p>Bilangan 2 : <input type="text" name="y" /></p><br>
+    <p>Hasil : <input type="text" name="hasil" disabled="true" /></p>
+    <p>Operator : <select name="opt"></p>
+     <option value="Penambahan"> + (Penambahan)</option>
+     <option value="Pengurangan"> - (Pengurangan)</option>
+     <option value="Perkalian"> * (Perkalian)</option>
+     <option value="Pembagian"> / (Pembagian)</option>
+    </select>
+    <input type="button" value="=" onClick="hitung()" /> 
+    <input type="button" value="CLEAR" onClick="resetForm()" />
+    </form>
+    </body>
+    </html>

@@ -1,0 +1,46 @@
+<html>
+<center>
+<head>
+	<h1>KONVERSI</h1>
+</head>
+</center>
+	<title>SOAL 1</title>
+
+	<script language="JavaScript">
+function percobaan() {
+var val2=document.kirim.T2.value
+if (val2>=0 && val2 <=40)
+	document.kirim.T3.value = "E"
+if (val2>=40 && val2 <=55)
+	document.kirim.T3.value = "D"
+if (val2>=55 && val2 <=60)
+	document.kirim.T3.value = "C"
+if (val2>=61 && val2 <=65)
+	document.kirim.T3.value = "BC"
+if (val2>=65 && val2 <=70)
+	document.kirim.T3.value = "B"
+if (val2>=70 && val2 <=80)
+	document.kirim.T3.value = "AB"
+if (val2>=80 && val2 <=100)
+	document.kirim.T3.value = "A"
+}
+	</script>
+<body>
+    <style type="text/css">
+        body{
+            font-style: arial; 
+            background-color: black;
+            color: lightgreen;
+            font-size: 10;
+        }
+    </style>
+<center>
+<form method="TAMPIL" name="kirim"> 
+<h1>ANGKA : <input type="text" name="T2" size="25"> <br>
+HURUF :  <input type="text" name="T3" size="25">
+</h1>
+<h2> <input type="Button" value ="CLICK" name="B2" onclick=percobaan()></h2>
+</center>
+</form>
+</body>
+</html>
